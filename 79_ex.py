@@ -1,4 +1,4 @@
-class planet:
+'''class planet:
     shape = 'round'
 
     @classmethod
@@ -16,3 +16,4 @@ print(planet.spin('60000m/s'))
 
 # even this will also print
 print(planet.spin())
+'''
