@@ -18,4 +18,4 @@ print(''' hello ''')
 print("lohit is from India \n daiki is from Japan")
 
 
-print("lohit is from India \t daiki is from Japan")
+print("lohit is from India \t daiki is from Japan") 
