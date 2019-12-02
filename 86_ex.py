@@ -1,20 +1,28 @@
-# inbuilt modules
+# sets 
+# no dublicate/repeated values
 
-countries = ['India', 'USA', 'China']
-countries2 = ['Japan', 'Canada','North Korea']
+# create an output set which contains only the even numbers that are present in the input list.
 
-output = {}
+input_list = [1,2,3,4,3,3,6,8,9,7,6,54,325,8,8,978,425,32,5,68,87,3]
 
-# using the for loop
+output_set = set()
 
-for(key, value) in zip(countries, countries2):
-    output[key] = value
-print(output)
+for var in input_list:
+    if var %2 == 0:
+        output_set.add(var)
 
-print('--------------------------------')
+print('output set', output_set)
 
-# 
+print('------------------------')
 
-out = {key:value for(key, value) in zip(countries, countries2)}
 
-print(out)
+input_list = [1,2,3,4,5,6,7,8,9,10]
+
+set_using_comp = {var for var in input_list if var %2 == 0}
+
+print('Output Set using set comprehensions',set_using_comp)
+
+# list => []
+# tuple => ()
+# dict => {}
+# set => {}
